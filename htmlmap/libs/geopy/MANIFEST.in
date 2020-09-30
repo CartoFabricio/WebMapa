@@ -1,0 +1,8 @@
+recursive-include test *
+global-exclude *.py[co]
+global-exclude .DS_Store
+global-exclude __pycache__
+include AUTHORS
+include LICENSE
+include README.rst
+include pytest.ini
