@@ -34,23 +34,17 @@ from qgis.utils import iface
 from qgis.core import *
 from qgis.utils import iface
 
-
-sys.path.append('C:/Python/Lib/site-packages')
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "\libs")
 import folium
 from folium import plugins
 from folium.plugins import MeasureControl, FloatImage, MarkerCluster, TimestampedGeoJson, Search
 from folium.features import CustomIcon, Template
-
 import branca.colormap as cm
-
 import json
-
-sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/libs")
 import csv
 import geopy
 from geopy import geocoders
 from geopy.geocoders import Nominatim, GoogleV3
-import geocoder
 import json
 
 # Initialize Qt resources from file resources.py
